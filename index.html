@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./src/output.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <style>
+        @media (max-width: 640px) {
+            .nav-links {
+                display: none;
+            }
+
+            .nav-links.active {
+                display: flex;
+                flex-direction: column;
+                gap: 1rem;
+                position: absolute;
+                top: 60px;
+                right: 0;
+                background-color: black;
+                width: 100%;
+                padding: 1rem;
+            }
+            .nimadir {
+              height: 400px;
+            }
+            .tepaga {
+              margin-top: -8.7rem;
+              height: 700px;
+            }
+            .pastga {
+              height: 350px;
+            }
+        }
+    </style>
+  </head>
+  <body class="bg-gray-900 text-white">
+    <header>
+      <div class=" w-full max-w-[1310px] mx-auto py-10 px-5">
+        <div class=" flex items-center justify-between">
+          <div>
+            <img src="./image/logo.svg" alt="Creativeart Logo" />
+          </div>
+          <div class="lg:hidden cursor-pointer" id="menu-icon">
+            <div class="w-6 h-0.5 bg-white mb-1"></div>
+            <div class="w-6 h-0.5 bg-white mb-1"></div>
+            <div class="w-6 h-0.5 bg-white"></div>
+          </div>
+          <nav class="hidden lg:flex items-center gap-7">
+            <ol class="flex items-center gap-7">
+              <li><a href="#" class="text-white">Marketplace</a></li>
+              <li><a href="#" class="text-white">Artists</a></li>
+              <li><a href="#" class="text-white">Community</a></li>
+              <li><a href="#" class="text-white">Collections</a></li>
+            </ol>
+            <button class="w-[10rem] h-[2rem] rounded-xl bg-[#D3F85A] hover:bg-[#a1bd46]">Contact</button>
+          </nav>
+        </div>
+      </div>
+      <nav>
+        <ol
+          class="nav-links flex flex-col space-y-4 fixed top-0 right-0 left-0 bottom-0 bg-black p-4 lg:hidden hidden"
+          id="nav-links"
+        >
+          <li><a href="#" class="text-white">Marketplace</a></li>
+          <li><a href="#" class="text-white">Artists</a></li>
+          <li><a href="#" class="text-white">Community</a></li>
+          <li><a href="#" class="text-white">Collections</a></li>
+          <div class="block lg:hidden">
+            <button
+              class="w-full h-[2rem] rounded-xl bg-[#D3F85A] hover:bg-[#a1bd46]"
+            >
+              Contact
+            </button>
+          </div>
+        </ol>
+      </nav>
+    </header>
+    <main>
+      <section>
+        <div class="max-w-[1340px] mx-auto py-10 px-4">
+          <div class="flex flex-col lg:flex-row items-center gap-8">
+            <!-- Left Section -->
+            <div class="flex-1">
+              <h1 class="text-5xl font-bold text-white mb-4">
+                Discover and Collect The Best NFTs
+                <span class="text-[#D3F85A]">Digital Art.</span>
+              </h1>
+              <p class="text-lg text-gray-300 mb-6">
+                Get started with the easiest and most secure platform to buy and
+                trade digital ART and NFTs. Start exploring the world of digital
+                art and NFTs today and take control of your digital assets with
+                confidence!
+              </p>
+              <div class="flex gap-4 mb-8">
+                <button
+                  class="px-6 py-3 rounded-xl bg-[#D3F85A] hover:bg-[#a1bd46] text-black"
+                >
+                  Explore Now
+                </button>
+                <button
+                  class="px-6 py-3 rounded-xl bg-gray-700 hover:bg-gray-600 text-white"
+                >
+                  Learn More
+                </button>
+              </div>
+              <div class="flex gap-8 text-center">
+                <div>
+                  <h2 class="text-3xl font-bold text-[#D3F85A]">8.9K</h2>
+                  <p class="text-gray-300">Art work</p>
+                </div>
+                <div>
+                  <h2 class="text-3xl font-bold text-[#D3F85A]">65K</h2>
+                  <p class="text-gray-300">Artist</p>
+                </div>
+                <div>
+                  <h2 class="text-3xl font-bold text-[#D3F85A]">87K</h2>
+                  <p class="text-gray-300">Collection</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Right Section -->
+            <div class="flex-1 flex flex-col items-center lg:items-end">
+              <div class="relative">
+                <img
+                  src="./image/aka.jpg"
+                  alt="NFT Art"
+                  class="rounded-xl shadow-lg"
+                />
+                <div class="absolute top-4 left-4">
+                  <!-- Content can be added here if needed -->
+                </div>
+                <div
+                  class="absolute bottom-4 right-4 bg-blue-700 p-4 rounded-lg text-center"
+                >
+                  <p class="text-gray-300">Ends in</p>
+                  <p class="text-white text-xl font-bold">05:45:47</p>
+                  <p class="text-gray-300">Current bid</p>
+                  <p class="text-white text-xl font-bold">0.24ETH</p>
+                  <button
+                    class="mt-2 px-4 py-2 bg-yellow-500 hover:bg-yellow-600 text-black rounded-lg"
+                  >
+                    Place A Bid
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <header
+      class="text-center py-10 flex justify-between pl-20 mr-20 items-end flex-wrap"
+    >
+      <h1 class="text-5xl font-bold">
+        <span class="text-yellow-300">Amazing</span> and
+        <span class="text-green-400"
+          >Super <br />
+          Unique Art of This</span
+        >
+        <span class="text-yellow-300">Week</span>
+      </h1>
+      <button
+        class="mt-4 w-32 bg-[#8fab4f] hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+      >
+        See All
+      </button>
+    </header>
+    <main class="container mx-auto px-4">
+      <section class="mx-auto justify-evenly flex flex-wrap">
+        <div
+          class="bg-gray-800 rounded-lg shadow-md p-4 flex flex-col items-center justify-center w-[400px]"
+        >
+          <img
+            src="./image/Rectangle 9669.png"
+            alt="Surgeon, Josh Rife"
+            class="rounded-lg"
+          />
+          <div class="mt-8">
+            <div class="flex justify-between w-[400px] pl-4 pr-4">
+              <h2 class="text-2xl font-bold">Surgeon, Josh Rife</h2>
+              <p class="text-xl">490ETH</p>
+            </div>
+            <div class="flex justify-between w-[400px] pl-4 pr-4 items-center">
+              <p class="text-gray-400">
+                Ending in <span class="text-white">03:24:56</span>
+              </p>
+              <button
+                class="mt-4 w-32 bg-[#8fab4f] hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+              >
+                Place A Bid
+              </button>
+            </div>
+          </div>
+        </div>
+        <div
+          class="bg-gray-800 rounded-lg shadow-md p-4 flex flex-col items-center justify-center w-[400px]"
+        >
+          <img
+            src="./image/Rectangle 9669.png"
+            alt="Surgeon, Josh Rife"
+            class="rounded-lg"
+          />
+          <div class="mt-8">
+            <div class="flex justify-between w-[400px] pl-4 pr-4">
+              <h2 class="text-2xl font-bold">Surgeon, Josh Rife</h2>
+              <p class="text-xl">490ETH</p>
+            </div>
+            <div class="flex justify-between w-[400px] pl-4 pr-4 items-center">
+              <p class="text-gray-400">
+                Ending in <span class="text-white">03:24:56</span>
+              </p>
+              <button
+                class="mt-4 w-32 bg-[#8fab4f] hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+              >
+                Place A Bid
+              </button>
+            </div>
+          </div>
+        </div>
+        <div
+          class="bg-gray-800 rounded-lg shadow-md p-4 flex flex-col items-center justify-center w-[400px]"
+        >
+          <img
+            src="./image/Rectangle 9669.png"
+            alt="Surgeon, Josh Rife"
+            class="rounded-lg"
+          />
+          <div class="mt-8">
+            <div class="flex justify-between w-[400px] pl-4 pr-4">
+              <h2 class="text-2xl font-bold">Surgeon, Josh Rife</h2>
+              <p class="text-xl">490ETH</p>
+            </div>
+            <div class="flex justify-between w-[400px] pl-4 pr-4 items-center">
+              <p class="text-gray-400">
+                Ending in <span class="text-white">03:24:56</span>
+              </p>
+              <button
+                class="mt-4 w-32 bg-[#8fab4f] hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+              >
+                Place A Bid
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section
+        class="text-center mt-16 flex justify-evenly items-center flex-wrap max-[640px]:grid-cols-1"
+      >
+        <div class="pt-32 max-[640px]:w-[640px]">
+          <h2 class="text-4xl font-bold leading-10">
+            Create And Sell Your
+            <p class="text-[#8fab4f]">Best NFTs</p>
+          </h2>
+          <p class="text-gray-400 mt-4 leading-5">
+            Start exploring the world of digital art and NFTs today <br />
+            and take control of your digital assets with confidence!
+          </p>
+          <div class="mt-8 max-[640px]:w-[100%]">
+            <button
+              class="bg-[#8fab4f] hover:bg-green-600 text-white font-bold py-2 px-8 rounded"
+            >
+              Create Now
+            </button>
+            <button
+              class="bg-transparent border-2 border-none hover:bg-green-500 hover:text-white text-green-500 font-bold py-2 px-8 rounded ml-4"
+            >
+              Learn More
+            </button>
+          </div>
+        </div>
+        <div class="flex justify-center mt-12 max-[840px]:ml-32">
+          <img
+            src="./image/Rectangle 9671.png"
+            alt="NFT Image 1"
+            class="w-2/4 rounded-lg mx-2 relative max-[840px]:mt-32 max-[840px]:w-[225px] "
+          />
+          <img
+            src="./image/Rectangle 9671.png"
+            alt="NFT Image 2"
+            class="w-[225px] rounded-lg mx-2 absolute mt-44 mr-60 max-[840px]:w-44"
+          />
+        </div>
+      </section>
+    </main>
+    <div class="max-w-screen-xl mx-auto p-6 mt-44">
+        <div class="flex justify-between items-center mb-4 my-[40px]">
+          <h1 class="text-3xl font-bold">Popular <span class="text-yellow-400">Artists</span><br> On This Week</h1>
+          <button class="bg-yellow-400 text-black px-4 py-2 rounded-lg">See All</button>
+        </div>
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 auto-rows-fr">
+          <div class="bg-gray-800 rounded-lg overflow-hidden sm:row-span-2">
+            <img class="w-full" src="https://s3-alpha-sig.figma.com/img/7a51/fa86/3eaae4c98d50bad91614f25a62d61ec4?Expires=1719792000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=MrQu4FHXi-ruidVcIk9H6gzOc3dRCqDUBNpNwI8oBfTImcYFL~~T4WXS67sNPD5URjBpBvoYJNySj92N0UQQvSsVBJGTqP8PjkFi~24qNUX-4P6OsFqsYRnG9yOTboQdMXHKkSYMlTehIsYy0T9e8VRBtLjMJcrLXknIoRYv~cFCeaNVCG0ZX4ejzG3LYqZjopfiIOS4ma6ZcwL8nF-DUQhM-JRQRZK1SqHgacbd4Tu-Qc2uHVnWwHQQMkmzVSoPvoQIa2FEAYny~Lk91DoRUi1A-eg9c50Guhc1j5K-ANIWcTPOwZlY5WBuHjhXomV4ESibGgsQsoPBqJxaEVP39A__" alt="Artist 1" class="w-full h-64 object-cover">
+            <div class="p-4">
+              <p class="font-bold">Owner</p>
+              <p class="text-lg">Osvaldo Percy</p>
+            </div>
+          </div>
+          <div class="nimadir bg-gray-800 rounded-lg overflow-hidden ">
+            <img src="https://s3-alpha-sig.figma.com/img/2918/7204/da66b385410a66a855af16c44dbd38d4?Expires=1719792000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=l5s4fczJWW9PAjaurjrIU6~JwL2F811knpq8TIxzIjow3a~SPqhMzxOmhQw3-PHKhMeKymjrHGHet16BFoLss3j-wGmMEj8N4MOYMWwNOizYioSDglNG-1mRo1Ecikz7ZGKAMWlDGC9Km0aizqhQ~8qKTesrj~d2rJ8JwHvM~9unB8vKJvzgRJI~H58fbrcl33EOf8zlA-Wp3dHQclbro3iDCO4BrgJeiXkx7rSWerp~UGNDjYrRs30AF8ornPQWZIEZQCGkQyHrxeYMJK-6-Y0V81Bs~s7tQHSzOVUGdtTYNNqM8Y5j2pJq~2b0nZvfnDl9n467gsTtcagIlkdWXw__" alt="Artist 2" class="w-full h-48 object-cover">
+            <div class="p-4">
+              <p class="font-bold">Owner</p>
+              <p class="text-lg">Ranson Squire</p>
+            </div>
+          </div>
+          <div class="tepaga bg-gray-800 rounded-lg overflow-hidden sm:row-span-2">
+            <img class="w-full" src="https://s3-alpha-sig.figma.com/img/a4cb/6996/ca6a15125ef7be5230a495427c31d370?Expires=1719792000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=Gok9Tg1CQp794wOJFivSL8~gwabltvVKVwMcUpU4-EQmxMWT6l8~GyvOdnz5pmwEbL~Fpbh5-wXsrfnaeKkkbI3ynIZnNA~Y5PYwj43Yb0AM1l-wod0sT29PfInWftge~ypv~pWzxmvFpKhx773efA18T9QBf~R105xu7j67qqsPyMDb2iAHD~JfPwXC5efbD-5w74pJZSO3kE2sS1GIv78guRkclhZ-U~alqjFKPvRkLC8hpCRT-x9X39f2Jhw0ljw7TBx1SnIfbleESaReLK2LkoTYxHFamBvtleyLjN0gtKgpXMnufdfur3CSKgKcuMWHm1CR56VAXynQGwIAnw__" alt="Artist 3" class="w-full h-64 object-cover">
+            <div class="p-4">
+              <p class="font-bold">Owner</p>
+              <p class="text-lg">Cristio Leo</p>
+            </div>
+          </div>
+          <div class="pastga bg-gray-800 rounded-lg overflow-hidden">
+            <img src="https://s3-alpha-sig.figma.com/img/ea0b/1dfb/a769e21db83e2a034db47dbc049e16c1?Expires=1719792000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=gpGyvD6fPNBrkjFsZO9JVrspgN3NieXt8slMmnaI71T9tlsgafOm40eY7SSoNtnpu4H858N2IqVURlVSqv1v5k2D4S8nDJmf9eWB7LL~JEgXIwD4-~vYrp0Q2ZEDG0NtYoKijGVxfhBxCPjRBpOhoaTHb2oIICLbpr0hMlf7M8VZdBAkdmLG4WfWDrjQDmOnkx3HzwwSxY6nPljeze5aGOozGW2~he8u6HvezJeohjIim5eYmI0EbLq0gGKmGyVpc1VdCKx-~cGXTGtmpwlF9mQsv0K4MOZ0KJA-juwFoI-cu7UeAR9zWoU2db7TdOmxY8Y1pBLTOKSUzCLYMGzldw__" alt="Artist 4" class="w-full h-48 object-cover">
+            <div class="p-4">
+              <p class="font-bold">Owner</p>
+              <p class="text-lg">Sebastian Walten</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <footer>
+        <div class="bg-gray-800 p-6">
+            <div class="flex items-center justify-center min-h-screen">
+                <div class="xl:flex gap-8 xl:items-center sm:block xl:justify-between">
+                    <div class="flex-shrink-0 mr-6">
+                        <img src="./image/footer_img.png" alt="Image 1"
+                            class="xl:w-[630px] xl:h-[458px] sm:w-[280px] sm:h-[250px] object-cover rounded-lg mb-4">
+                    </div>
+                    <div class="text-white xl:w-[520px] xl:h-[288px] sm:space-y-4 sm:w-[343px] sm:h-[328px] sm:mx-auto">
+                        <h2 class="text-2xl font-bold mb-4">Subscribe And <span class="text-green-400">get our <br>
+                                Updates</span> Every Week</h2>
+                        <p class="mb-4 sm:text-center xl:text-left sm:w-[343px] sm:h-[78px]">We have a blog related to NFT so we can share thoughts and <br class="sm:hidden"> routines on our
+                            blog
+                            which is updated weekly</p>
+                        <div class="flex">
+                            <input type="email" placeholder="Enter your e-mail"
+                                class="p-2 rounded-l-lg bg-[#131e3a] w-[280px] border-none focus:outline-none focus:ring-2 focus:ring-green-400">
+                            <button class="bg-[#d3f85a] text-gray-900 p-2 text-sm font-semibold rounded-lg">Subscribe</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container sm:mt-5 mx-auto px-6 text-white">
+                <div class="flex pt-3 justify-between flex-wrap">
+                    <div class="w-full md:w-1/4 mb-6">
+                        <img src="./image/logoo.svg" alt="Logo">
+                        <p class="my-2">Discover NFTs by category, track the latest drop, and follow the collections you
+                            love. Enjoy it!</p>
+                        <div class="flex space-x-3">
+                            <a href="#" class="text-green-400 text-xl"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" class="text-green-400 text-xl"><i class="fab fa-twitter"></i></a>
+                            <a href="#" class="text-green-400 text-xl"><i class="fab fa-instagram"></i></a>
+                            <a href="#" class="text-green-400 text-xl"><i class="fab fa-linkedin"></i></a>
+                        </div>
+                    </div>
+                    <div class="w-full md:w-1/6 mb-6">
+                        <h3 class="text-lg font-semibold text-white mb-4">Explore</h3>
+                        <ul>
+                            <li class="mb-2"><a href="#">Art Sign In</a></li>
+                            <li class="mb-2"><a href="#">Collectibles</a></li>
+                            <li class="mb-2"><a href="#">Domain Name</a></li>
+                            <li class="mb-2"><a href="#">Utility</a></li>
+                        </ul>
+                    </div>
+                    <div class="w-full md:w-1/6 mb-6">
+                        <h3 class="text-lg font-semibold text-white mb-4">Statistic</h3>
+                        <ul>
+                            <li class="mb-2"><a href="#">Ranking</a></li>
+                            <li class="mb-2"><a href="#">Collectibles</a></li>
+                            <li class="mb-2"><a href="#">Activity</a></li>
+                        </ul>
+                    </div>
+                    <div class="w-full md:w-1/6 mb-6">
+                        <h3 class="text-lg font-semibold text-white mb-4">Company</h3>
+                        <ul>
+                            <li class="mb-2"><a href="#">About Us</a></li>
+                            <li class="mb-2"><a href="#">Career</a></li>
+                            <li class="mb-2"><a href="#">Support</a></li>
+                            <li class="mb-2"><a href="#">Partners</a></li>
+                        </ul>
+                    </div>
+                    <div class="w-full md:w-1/6 mb-6">
+                        <h3 class="text-lg font-semibold text-white mb-4">Resources</h3>
+                        <ul>
+                            <li class="mb-2"><a href="#">Help Center</a></li>
+                            <li class="mb-2"><a href="#">Platform Status</a></li>
+                            <li class="mb-2"><a href="#">Blog</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="border-t sm:block sm:justify-start xl:flex xl:justify-between border-gray-700 mt-6 pt-6 text-center sm:text-left">
+                    <p class="mb-4 md:mb-0">&copy; Copyright 2023 - Creativeart</p>
+                    <div class="md:flex md:justify-between">
+                        <div class="xl:flex sm:block sm:justify-start xl:justify-center xl:space-x-4 sm:space-x-4">
+                            <a href="#" class="hover:underline">Privacy Policy</a> <br class="sm:block xl:hidden">
+                            <a href="#" class="hover:underline">Terms & Conditions</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script defer>
+      document.addEventListener("DOMContentLoaded", () => {
+        const menuIcon = document.getElementById("menu-icon");
+        const navLinks = document.getElementById("nav-links");
+
+        menuIcon.addEventListener("click", () => {
+          navLinks.classList.toggle("active");
+        });
+      });
+    </script>
+  </body>
+</html>
